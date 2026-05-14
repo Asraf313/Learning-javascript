@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="Student_form.css">
+    <script src="Student_details.js"></script>
+</head>
+
+<body>
+
+    <h1>STUDENT FORM</h1>
+    <!-- Form Table -->
+    <table>
+        <tr>
+            <td><b>Name</b></td>
+            <td>
+                <input type="text" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td><b>Age</b></td>
+            <td>
+                <input type="number" id="age">
+            </td>
+        </tr>
+        <tr>
+            <td><b>Gender</b></td>
+            <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td><b>Course</b></td>
+            <td>
+                <select id="course">
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>React</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>E-mail</b></td>
+            <td>
+                <input type="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="save-btn" onclick="saveStudent()">
+                    Save
+                </button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Student Details Table -->
+    <table id="studentTable">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>

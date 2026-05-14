@@ -1,0 +1,23 @@
+.overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    z-index: 2;
+    background-color: Red;
+    color: black;
+    width: 40%;
+    left: 30%;
+    top: 30%;
+    padding: 30px;
+    display: none;
+}

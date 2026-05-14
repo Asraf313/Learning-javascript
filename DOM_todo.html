@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="changeText">DOM</h1>
+    <p>Document Object Model</p>
+    <h2 id="unchangetext">Hi How are you?</h2>
+    <button onclick="changeContent()">Change Content</button>
+
+    <!-- Excercise 1: -->
+    <h1>Count: <span id="countValue">0</span></h1>
+    <button onclick="increment()">Increment</button>
+
+    <!-- Create a game: -->
+    <h1>Guess the Number</h1>
+    <p>Enter a number between 1 and 10:</p>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="result">You are right/wrong</p>
+    <p>Score: <span id="scoreValue">0</span></p>
+
+    <!-- JavaScript Style Manipulation: -->
+    <h5 id="styleText">Style Manipulation</h5>
+    <button onclick="changeStyle()">Change Style</button>
+    <style>
+        h5 {
+            color: blue;
+            font-size: 24px;
+        }
+
+        .redText {
+            font-weight: bold;
+            font-size: 50px;
+        }
+    </style>
+
+    <!-- Task1: -->
+    <input type="text" id="inputText" placeholder="Enter some text" onkeyup="retrieveText()">
+    <h1>Output Text: <span id="outputText"></span></h1>
+
+    <!-- Task2: -->
+    <button onclick="addelement()">Add Hello</button>
+    <div id="helloContainer"></div>
+
+    <!-- Task3: -->
+    <h1 id="UpdateName">Name</h1>
+    <button onclick="update(event)">Asraf</button>
+    <button onclick="update(event)">Naveen</button>
+    <button onclick="update(event)">Suresh</button>
+
+    <!-- Task4: -->
+    <h1 onclick="remove(event)">One</h1>
+    <h1 onclick="remove(event)">Two</h1>
+    <h1 onclick="remove(event)">Three</h1>
+    <h1 onclick="remove(event)">Four</h1>
+    <h1 onclick="remove(event)">Five</h1>
+    <h1 onclick="remove(event)">Six</h1>
+
+    <div id="demoinnerHtml">
+        <p>This is a paragraph.</p>
+    </div>
+
+    <!-- Ways of selecting elements: -->
+    <h1 id="elementId">Hello Asraf</h1>
+    <h6>Welcome to javascript Todo concept</h6>
+    <p class="elementClass1">Paragraph 1</p>
+    <p id="elementClass2">Sample Paragraph</p>
+
+    <!-- Adding HTML Element: -->
+    <div id="Container1"></div>
+    <div id="Container2">
+        <h2>Hello, I am prepended JavaScript!</h2>
+    </div>
+    <div id="Container3">
+        <h1>hello</h1>
+    </div>
+    <h4 id="removeElement">Hi, I am a removable element</h4>
+
+    <!-- Todo Scratch: -->
+    <input type="text" id="input">
+    <button onclick="add()">Add</button>
+    <ul id="list-container">
+        <li>
+            Hello
+            <button onclick="remove(event)">Delete</button>
+        </li>
+    </ul>
+    <script src="JS_learn.js"></script>
+</body>
+
+</html>

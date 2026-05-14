@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup</title>
+    <link rel="stylesheet" href="Index.css">
+    <script src="Index.js"></script>
+</head>
+
+<body>
+    <button onclick="showPopup()">Show</button>
+    <div class="overlay">Popup</div>
+    <div class="popup">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nihil vitae id provident sequi magnam, eos
+            sint nulla dolorum quis. Molestias inventore optio error, officiis modi a illum. Blanditiis fuga hic facere
+            numquam placeat, ab in itaque odio aspernatur suscipit totam reprehenderit ipsum accusamus quis quam officia
+            repellat nihil laboriosam?</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- Create a addeventlistener use anonymous function -->
+    <button id="btn">Show Popup</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Popup shown using addEventListener");
+        });
+    </script>
+</body>
+
+</html>
