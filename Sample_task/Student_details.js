@@ -27,6 +27,15 @@ function saveStudent() {
         </td>
     `;
     document.getElementById("studentTable").append(row);
+    
+    // Clear form inputs
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("course").value = "JavaScript";
+    for (var i = 0; i < genderElements.length; i++) {
+        genderElements[i].checked = false;
+    }
 }
 
 

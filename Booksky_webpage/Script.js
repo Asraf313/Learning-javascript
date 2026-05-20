@@ -25,8 +25,11 @@ addbook.addEventListener("click", function (event) {
     event.preventDefault();
     var div = document.createElement("div");
     div.setAttribute("class", "book-container");
-    div.innerHTML = "<h2>" + booktitleinput.value + "</h2><h3>" + bookauthorinput.value + "</h3><p>" + bookdescriptioninput.value + "</p><button class='delete-btn' onclick='deletebook(event)'>Delete</button>";
+    div.innerHTML = "<h2>" + booktitleinput.value + "</h2><h5>" + bookauthorinput.value + "</h5><p>" + bookdescriptioninput.value + "</p><button class='delete-btn' onclick='deletebook(event)'>Delete</button>";
     container.appendChild(div);
+    booktitleinput.value = "";
+    bookauthorinput.value = "";
+    bookdescriptioninput.value = "";
     popupoverlay.style.display = "none";
     popup.style.display = "none";
 });

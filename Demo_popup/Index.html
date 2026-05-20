@@ -4,7 +4,6 @@
 <head>
     <title>Popup</title>
     <link rel="stylesheet" href="Index.css">
-    <script src="Index.js"></script>
 </head>
 
 <body>
@@ -18,8 +17,9 @@
         <button onclick="closePopup()">Close</button>
     </div>
 
-    <!-- Create a addeventlistener use anonymous function -->
+    <!-- Create an event listener using anonymous function -->
     <button id="btn">Show Popup</button>
+    <script src="Index.js"></script>
     <script>
         document.getElementById("btn").addEventListener("click", function () {
             alert("Popup shown using addEventListener");
